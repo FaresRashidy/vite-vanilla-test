@@ -6,8 +6,7 @@
   "scripts": {
     "dev": "npx concurrently \"vite\" \"npx nodemon src/server/server.js\"",
     "build": "vite build",
-    "serve": "vite preview",
-    "vercel-build": "echo hello"
+    "serve": "vite preview"
   },
   "devDependencies": {
     "concurrently": "^9.1.2",
