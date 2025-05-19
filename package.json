@@ -4,9 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "npx concurrently \"vite\" \"npx nodemon src/server/server.js\"",
+    "dev": "npx concurrently \"vite\" \"npx nodemon --watch api --exec node api/dev-server.js\"",
     "build": "vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "start": "node api/server.js"
+  },
+  "engines": {
+    "node": ">=18.x"
   },
   "devDependencies": {
     "concurrently": "^9.1.2",
